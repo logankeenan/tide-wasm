@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Open console to see output</p>
+<script type="module">
+    import init, {request} from './out/tide_wasm.js';
+
+    async function run() {
+        await init();
+        request();
+    }
+
+    run();
+</script>
+</body>
+</html>
