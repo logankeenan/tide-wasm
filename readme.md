@@ -1,3 +1,2 @@
-1. `cargo build --target wasm32-unknown-unknown`
-2. `wasm-bindgen target/wasm32-unknown-unknown/debug/tide_wasm.wasm --out-dir ./out --target web`
+1. `. ./build.sh`
 3. Run [basic-http-server](https://crates.io/crates/basic-http-server) or similar and serve index.html file.
