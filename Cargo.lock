@@ -158,20 +158,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "async-sse"
-version = "4.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "53bba003996b8fd22245cd0c59b869ba764188ed435392cf2796d03b805ade10"
-dependencies = [
- "async-channel",
- "async-std",
- "http-types",
- "log",
- "memchr",
- "pin-project-lite 0.1.12",
-]
-
-[[package]]
 name = "async-std"
 version = "1.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -193,7 +179,7 @@ dependencies = [
  "memchr",
  "num_cpus",
  "once_cell",
- "pin-project-lite 0.2.8",
+ "pin-project-lite",
  "pin-utils",
  "slab",
  "wasm-bindgen-futures",
@@ -485,7 +471,7 @@ dependencies = [
  "futures-io",
  "memchr",
  "parking",
- "pin-project-lite 0.2.8",
+ "pin-project-lite",
  "waker-fn",
 ]
 
@@ -525,7 +511,7 @@ dependencies = [
  "futures-sink",
  "futures-task",
  "memchr",
- "pin-project-lite 0.2.8",
+ "pin-project-lite",
  "pin-utils",
  "slab",
 ]
@@ -642,7 +628,7 @@ dependencies = [
  "cookie",
  "futures-lite",
  "infer",
- "pin-project-lite 0.2.8",
+ "pin-project-lite",
  "rand 0.7.3",
  "serde",
  "serde_json",
@@ -768,12 +754,6 @@ name = "percent-encoding"
 version = "2.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d4fd5641d01c8f18a23da7b6fe29298ff4b55afcccdf78973b24cf3175fee32e"
-
-[[package]]
-name = "pin-project-lite"
-version = "0.1.12"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "257b64915a082f7811703966789728173279bdebb956b143dbcd23f6f970a777"
 
 [[package]]
 name = "pin-project-lite"
@@ -1207,9 +1187,8 @@ dependencies = [
 [[package]]
 name = "tide"
 version = "0.17.0-beta.1"
-source = "git+https://github.com/logankeenan/tide.git?branch=wasm#210557a7ffbc4399e50ff9a6a9c4c33b6d4e395d"
+source = "git+https://github.com/logankeenan/tide.git?branch=wasm#5a8fb28275033dcb7e1e4224e22c6a094444cd72"
 dependencies = [
- "async-sse",
  "async-std",
  "async-trait",
  "futures-util",
@@ -1217,7 +1196,7 @@ dependencies = [
  "http-types",
  "kv-log-macro",
  "log",
- "pin-project-lite 0.2.8",
+ "pin-project-lite",
  "routefinder",
  "serde",
  "serde_json",
